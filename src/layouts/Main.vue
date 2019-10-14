@@ -1,11 +1,10 @@
 <template>
   <div class="container">
-    <ul>
-      <li>
+    <div class='nav'>
+        <v-link href="/emails">Emails</v-link>
         <v-link href="/">Home</v-link>
-        <v-link href="/about">About</v-link>
-      </li>
-    </ul>
+        <v-link href="/text">Text</v-link>
+    </div>
 
     <slot></slot>
   </div>
@@ -22,6 +21,11 @@
 </script>
 
 <style scoped>
+  .nav{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+  }
   .container {
     max-width: 600px;
     margin: 0 auto;

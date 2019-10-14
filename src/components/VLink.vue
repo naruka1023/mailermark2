@@ -1,11 +1,13 @@
 <template>
-  <a
-    v-bind:href="href"
-    v-bind:class="{ active: isActive }"
-    v-on:click="go"
-  >
-    <slot></slot>
-  </a>
+  <div style='padding:20px'>
+    <a
+      v-bind:href="href"
+      v-bind:class="{ active: isActive }"
+      v-on:click="go"
+    >
+      <slot></slot>
+    </a>
+  </div>  
 </template>
 
 <script>
